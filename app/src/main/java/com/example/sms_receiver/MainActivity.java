@@ -68,16 +68,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setMessage("정말 종료하시겠습니까?");
+                builder.setMessage("You really want to QUIT?");
                 builder.setTitle("Warning")
                         .setCancelable(false)
-                        .setPositiveButton("네", new DialogInterface.OnClickListener() {
+                        .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int i) {
                                 System.exit(0);
                             }
                         })
-                        .setNegativeButton("아니요", new DialogInterface.OnClickListener() {
+                        .setNegativeButton("NO", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int i) {
                                 dialog.cancel();
